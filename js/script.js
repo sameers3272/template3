@@ -12,10 +12,43 @@ var swiper = new Swiper(".swiper-container", {
 
 });
 
-var mini = new Swiper('.con', {
-  speed: 400,
-  spaceBetween: 100
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+  nav: true,
+  center:true,
+  navText: ["<i class='icofont-rounded-left'></i>", "<i class='icofont-rounded-right'></i>"],
+    items:3,
+    navClass:['own-prev','own-next'],
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:6000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:1,
+            nav:true
+        },
+        900:{
+            items:3,
+            nav:true,
+        },
+        1500:{
+          items:4,
+          nav:true,
+          center:false,
+        }
+    }
+
 });
+
+
+
 
 var box = document.querySelectorAll(".text-box");
 document.addEventListener("scroll", () => {

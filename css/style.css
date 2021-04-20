@@ -188,8 +188,51 @@ p{
 }
 
 
- 
+ .owl-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+.card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.slider .card{
-    margin: 10px;
+}
+ .card2 .card-title{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+ }
+
+ .card2 .card-text{
+    font-size: 12px;
+    flex: 1
+ }
+
+ .card2 img{
+    width: 10rem;
+    height: auto;
+ }
+
+.own-prev,.own-next{
+    font-size: 250%;
+    outline: none;
+    border: none; 
+}
+
+.own-prev{
+     position: absolute;
+    top: 40%;
+    margin-left: -20px;
+    display: block !important;
+}
+
+
+
+.own-next{
+     position: absolute;
+    top: 40%;
+    right: -25px;
+    display: block !important;
 }
