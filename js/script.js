@@ -12,8 +12,8 @@ var swiper = new Swiper(".swiper-container", {
 
 });
 
-var owl = $('.owl-carousel');
-owl.owlCarousel({
+var servicesOwlCarousel = $('#services-owl-carousel');
+servicesOwlCarousel.owlCarousel({
   nav: true,
   center:true,
   navText: ["<i class='icofont-rounded-left'></i>", "<i class='icofont-rounded-right'></i>"],
@@ -47,7 +47,15 @@ owl.owlCarousel({
 
 });
 
-
+var clientsOwlCarousel=$('#clients-owl-carousel');
+clientsOwlCarousel.owlCarousel({
+  items:5,
+  loop:true,
+  center:true,
+  autoplay:true,
+  autoplayTimeout:5500,
+  autoplayHoverPause:false,
+})
 
 
 var box = document.querySelectorAll(".text-box");
