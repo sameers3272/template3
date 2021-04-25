@@ -12,6 +12,9 @@ var swiper = new Swiper(".swiper-container", {
 
 });
 
+
+
+
 var servicesOwlCarousel = $('#services-owl-carousel');
 servicesOwlCarousel.owlCarousel({
   nav: true,
@@ -39,7 +42,7 @@ servicesOwlCarousel.owlCarousel({
             nav:true,
         },
         1500:{
-          items:4,
+          items:3,
           nav:true,
           center:false,
         }
@@ -55,6 +58,27 @@ clientsOwlCarousel.owlCarousel({
   autoplay:true,
   autoplayTimeout:5500,
   autoplayHoverPause:false,
+  responsiveClass:true,
+  responsive:{
+      0:{
+          items:1,
+          nav:false
+      },
+      600:{
+          items:3,
+          nav:true
+      },
+      900:{
+          items:5,
+          nav:true,
+      },
+      1500:{
+        items:5,
+        nav:true,
+        center:false,
+      }
+  }
+
 })
 
 
@@ -85,3 +109,19 @@ function animate(element, animation) {
     element.classList.add(animation);
   }
 }
+
+jQuery(document).ready(function (a) {
+  a(".wdp-why-choose-box.box-left").easyTicker({
+    direction: "down",
+    visible: 3,
+    easing: "swing",
+  });
+});
+
+jQuery(document).ready(function (a) {
+  a(".wdp-why-choose-box.box-right").easyTicker({
+    direction: "up",
+    visible: 3,
+    easing: "swing",
+  });
+});
