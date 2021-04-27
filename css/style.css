@@ -77,7 +77,12 @@ ul {
 .nav-item {
   padding: 0px 5px 0px 5px;
 }
-
+.navbar .active{
+  color: #3090f0!important;
+}
+.nav-link:hover{
+  color: #3090f0!important;
+}
 .dropdown-menu {
   width: 1250px !important;
   right: -550px;
@@ -156,17 +161,125 @@ body,
   height: 100%;
 }
 .swiper-container {
-  height: 90%;
+  height: 100%;
 }
 .swiper-wapper {
   height: 100%;
 }
-
+.swiper-slide1{
+  height: 86%!important;
+}
 .swiper-slide {
-  height: 100%;
+  height: 90%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#slider .slider-heading{
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 800;
+  text-shadow: 4px 5px #000;
+}
+#slider .stars{
+  text-align: center;
+}
+#slider .stars i{
+  font-size: 25px;
+  color: goldenrod;
+
+}
+
+#slider .swiper-container{
+  overflow-x: hidden;
+ 
+ 
+}
+
+#slider .stars1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 15%;
+ width: 100%;
+}
+#slider .display-slider-sub-heading{
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+  text-shadow: 3px 3px #000;
+}
+
+#slider .display-slider-heading{
+  font-size: 80px;
+  color: #fff;
+  font-weight: 1000;
+  text-align: center;
+  text-shadow: 6px 6px #000;
+  padding: 0;
+  margin: 0;
+}
+
+#slider .display-slider-img{
+  display: grid;
+  place-items: center;
+  width: 100%;
+  z-index: 99999;
+  position: absolute;
+  bottom: -69px;
+  overflow: visible;
+
+}
+#slider .no-reverse{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+#slider .reverse{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  flex-direction: row;
+}
+
+@media(max-width:992px){
+  .swiper-slide1{
+    height: 80%!important;
+  }
+  #slider .display-slider-heading{
+    font-size: 40px;
+    text-shadow: 3px 3px #000;
+    
+  }
+  #slider .stars1{
+    top: 30%;
+  }
+  #slider .display-slider-sub-heading{
+    font-size: 15px;
+    text-shadow: 1px 1px #000;
+  }
+  #slider .slider-heading{
+    font-size: 25px;
+    text-shadow: 2px 2px #000;
+ 
+    margin: 0;
+    
+    text-align: center;
+  }
+  #slider .no-reverse{
+flex-direction: column;
+justify-content: center;
+  }
+  #slider .reverse{
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 }
 
 .abouts {
