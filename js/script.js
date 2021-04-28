@@ -1,3 +1,14 @@
+// Preloader
+ $(window).on('load', function() {
+  if ($('#preloader').length) {
+    $('#preloader').delay(1500).fadeOut('slow', function() {
+      $(this).remove();
+    });
+  }
+});
+
+
+// display Image Slider
 var swiper = new Swiper(".swiper-container", {
   spaceBetween: 30,
   centeredSlides: true,
@@ -82,7 +93,7 @@ clientsOwlCarousel.owlCarousel({
 })
 
 
-var box = document.querySelectorAll(".text-box");
+const box = document.querySelectorAll(".text-box");
 document.addEventListener("scroll", () => {
   for (i = 0; i < box.length; i++) {
     var ele = box[i];
@@ -90,7 +101,7 @@ document.addEventListener("scroll", () => {
   }
 });
 
-function inView(element) {
+const inView= (element) => {
   var elementHeight = element.clientHeight;
   var windowHeight = window.innerHeight;
   var scrollY = window.scrollY || window.pageYOffset;
@@ -104,24 +115,59 @@ function inView(element) {
   return false;
 }
 
-function animate(element, animation) {
-  if (inView(element)) {
-    element.classList.add(animation);
-  }
+const animate = (element, animation) => {
+  if (inView(element)) element.classList.add(animation);
 }
-
-jQuery(document).ready(function (a) {
+// Why US section
+jQuery(document).ready( (a)=> {
   a(".wdp-why-choose-box.box-left").easyTicker({
     direction: "down",
-    visible: 3,
+    visible: 4,
     easing: "swing",
   });
 });
 
-jQuery(document).ready(function (a) {
+jQuery(document).ready( (a)=> {
   a(".wdp-why-choose-box.box-right").easyTicker({
     direction: "up",
-    visible: 3,
+    visible: 4,
     easing: "swing",
   });
 });
+
+
+
+// ============== Potfolio ================
+
+$(document).ready(()=>{
+  let $btns =$('.project-area .button-group button');
+    
+  $btns.click(function(e){
+    $('.project-area .button-group button').removeClass('active');
+    e.target.classList.add('active');
+
+    let selector = $(e.target).attr('data-filter');
+    $('.project-area .grid').isotope({
+      filter:selector,
+    }).isotope( 'reloadItems' ).isotope();
+    return false;
+  });
+
+  $('.project-area .button-group #btn1').trigger('click');
+
+  $('.project-area .grid .test-popup-link').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true
+    },
+    mainClass: 'mfp-with-zoom', 
+    zoom: {
+      enabled: true, 
+      duration: 300, 
+      easing: 'ease-in-out',
+      opener: (openerElement)=> openerElement.is('img') ? openerElement : openerElement.find('img'),
+      
+    }
+  });
+
+})
