@@ -1,11 +1,11 @@
-// Preloader
- $(window).on('load', function() {
-  if ($('#preloader').length) {
-    $('#preloader').delay(1500).fadeOut('slow', function() {
-      $(this).remove();
-    });
-  }
-});
+// // Preloader
+//  $(window).on('load', function() {
+//   if ($('#preloader').length) {
+//     $('#preloader').delay(1500).fadeOut('slow', function() {
+//       $(this).remove();
+//     });
+//   }
+// });
 
 
 // display Image Slider
@@ -169,5 +169,44 @@ $(document).ready(()=>{
       
     }
   });
+
+})
+
+
+
+/*=============================WEBSITE DEVELOPMENT PAGE===========================*/
+
+// 
+var award=$('#award-carousel');
+award.owlCarousel({
+  items:1,
+  loop:true,
+  center:true,
+  autoplay:true,
+  autoplayTimeout:3500,
+  autoplayHoverPause:false,
+  pagination: false,
+
+})
+
+var reviewsOwlCarousel=$('#reviews-carousel');
+reviewsOwlCarousel.owlCarousel({
+  items:5,
+  loop:true,
+  autoplay:true,
+  margin:20,
+  autoplayTimeout:3500,
+  autoplayHoverPause:true,
+  responsiveClass:true,
+  responsive:{
+      0:{
+          items:1,
+         
+      },
+      1500:{
+        items:2,
+        
+      }
+  }
 
 })
