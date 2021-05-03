@@ -991,6 +991,7 @@ text-align:start;
 #front-section a.button{
   font-weight: bolder;
   margin-top: 10px;
+  font-size: 14px;
   
   display: inline;
 }
