@@ -5,10 +5,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #fff;
 }
 
@@ -19,7 +20,7 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #0B62FF;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -29,7 +30,7 @@
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-/* #preloader {
+#preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -70,7 +71,7 @@
   100% {
     transform: rotate(360deg);
   }
-} */
+}
 
 .navbar {
   background-color: #fff;
@@ -129,6 +130,7 @@ ul {
 }
 .blue-container ul a i {
   font-size: 18px;
+  padding-right: 5px;
 }
 .blue-container ul a {
   color: #fff;
@@ -947,8 +949,59 @@ footer #link-icons ul li i {
 /* front section */
 #front-section{
   background:#255dbed4 ;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 5rem 0;
   color: #fff;  
+ 
+}
+
+#front-section.e-commerce{
+  background-image: url('../img/bg/background1.jpg');
+  background-blend-mode:color;
+}
+#front-section.dynamic{
+  background-image: url('../img/bg/Dynamic-Website-Design-Company.jpg');
+  background-blend-mode:soft-light;
+ 
+}
+#front-section.word-press{
+  background-image: url('../img/bg/wordpress-developer-pune.jpg');
+  background-blend-mode:color-burn;
+ 
+}
+#front-section.responsive{
+  background-image: url('../img/bg/responsive-web-design.jpg');
+  background-blend-mode:color;
+ 
+}
+#front-section.software{
+  background-image: url('../img/bg/software-development.jpg');
+  background-blend-mode:color;
+ 
+}
+
+#front-section.portal{
+  background-image: url('../img/bg/portal-website-developement.jpg');
+  background-blend-mode:color;
+ 
+}
+#front-section.seo{
+  background-image: url('../img/bg/seo-expert.jpg');
+  background-blend-mode:multiply;
+ 
+}
+
+#front-section.graphic{
+  background-image: url('../img/bg/graphic-designer.jpg');
+  background-blend-mode:color;
+ 
+}
+
+#front-section.cms{
+  background-image: url('../img/bg/cms-development-company.jpg');
+  background-blend-mode:color;
  
 }
 
@@ -1010,8 +1063,9 @@ text-align:start;
 #front-section form {
   background: #fff;
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 3px #004cd0;
+  border-radius:10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   
   
 }
@@ -1024,6 +1078,7 @@ text-align:start;
   background: #3970d0;
   padding: 10px 15px;
   font-size: medium;
+
 }
 #front-section form header i{
  margin-right:10px ;
@@ -1118,7 +1173,7 @@ text-align:start;
   text-align: center;
 }
 #reviews-carousel .box .text-box p {
-  font-size: 15px;
+  font-size: 12px;
 }
 
 /* End Review section */
@@ -1280,3 +1335,250 @@ padding-left: 5px;
   
 
 /* End features */
+
+/* Front-Heading */
+
+#front-heading{
+  background-color: #3967B7;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+  height:80% ;
+  color: #fff;
+}
+#front-heading.our-work{
+
+background-image: url("../img/bg/our-creative-work.jpg");
+background-blend-mode:soft-light;
+
+}
+#front-heading.career{
+
+  background-image: url("../img/bg/career.jpg");
+  background-blend-mode:soft-light;
+  
+  }
+
+  #front-heading.about-us{
+
+    background-image: url("../img/bg/about-us.jpg");
+    background-blend-mode:soft-light;
+    
+    }
+
+    #front-heading.contact-us{
+
+      background-image: url("../img/bg/contact-us.jpg");
+      background-blend-mode:soft-light;
+      
+      }
+#front-heading a.yellow{
+background: #F99E1C;
+color: #fff;
+font-weight: bolder;
+}
+#front-heading h1{
+  text-align: center;
+}
+#front-heading p{
+  font-size: 14px;
+  text-align: center;
+}
+
+
+/* End Front-Heading */
+
+
+/* openings at career page*/
+#openings{
+  padding: 5rem 0;
+}
+#openings .heading{
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 0 0 1rem 0;
+}
+#openings form{
+  background:#F2F2F2;
+  padding: 2rem;
+}
+
+#openings .results{
+  padding: 3rem 0;
+}
+#openings .results .box{
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+padding: 1rem;
+border-radius: 1rem;
+margin-top: 1rem;
+}
+#openings .results .box .title-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#openings .results .box .title-content .heading-content{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+#openings .results .box .title-content .heading-content .icon{
+  padding:0 1.5rem;
+}
+#openings .results .box .title-content .tale-content{
+  display: flex;
+  justify-content:center;
+  align-items:flex-end;
+  
+}
+
+#openings .results .box .title-content .tale-content .full-time{
+padding-right: 2rem;
+}
+
+#openings .results .box .title-content .heading-content .title{
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+#openings .results .box  .icon img{
+  width: 3rem;
+  height: 3rem;
+}
+
+
+
+#openings .results .box .desc{
+  font-size: .9rem;
+  padding: 1rem;
+  text-align: justify;
+}
+
+/*End openings at career page */
+
+/* Detail at About us page */
+
+#details{
+  padding: 4rem 0;
+  background: #F7F7F7;
+}
+
+#details p{
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+/*End Detail at About us page */
+
+
+/* Boxs section in About-us page */
+#boxs{
+  padding: 3rem 0;
+}
+
+#boxs  .box{
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-direction: column;
+  padding: 1rem;
+ height: 100%;
+  
+}
+
+#boxs .box img{
+width: 6rem;
+height: 6rem;
+margin-bottom: 1rem;
+
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+#boxs .box h3{
+font-size: 25px!important;
+ font-family: 'Poppins', sans-serif;  
+  font-weight: 900;
+  color: #F99E1C;
+  
+
+
+}
+#boxs .box p{
+  text-align: center;
+  font-size: 0.9rem;
+
+}
+/* End Boxs section in About-us page */
+
+/* contact us page */
+#address{
+  padding: 5rem 0;
+  line-height: 1.7rem;
+}
+#address form {
+  background: #fff;
+  width: 100%;
+  border-radius:10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+  
+}
+
+#address p{
+  font-size: 0.9rem;
+}
+
+#address form .form-elements{
+  padding:10px;
+}
+#address form header{
+  color: #fff;
+  background: #3970d0;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+
+}
+#address form header i{
+ margin-right:10px ;
+}
+
+
+
+#address form input,
+#address form textarea{
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid; 
+  padding: 5px;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+#address form input:hover,
+#address form input:focus,
+#address form input:active,
+#address form textarea:hover,
+#address form textarea:focus,
+#address form textarea:active{
+  outline: none;
+  background: none;
+}
+
+#address form button{
+  width: 100%;
+}

@@ -1,11 +1,11 @@
-// // Preloader
-//  $(window).on('load', function() {
-//   if ($('#preloader').length) {
-//     $('#preloader').delay(1500).fadeOut('slow', function() {
-//       $(this).remove();
-//     });
-//   }
-// });
+// Preloader
+ $(window).on('load', function() {
+  if ($('#preloader').length) {
+    $('#preloader').delay(200).fadeOut('slow', function() {
+      $(this).remove();
+    });
+  }
+});
 
 
 // display Image Slider
