@@ -141,11 +141,18 @@ ul {
   text-decoration: none;
 }
 
+
+.navbar .navbar-brand .logo{
+width: 150px;
+height: auto;
+}
 .nav-link {
   transition: 0.2s ease;
+  text-transform: uppercase;
 }
 .nav-item {
   padding: 0px 5px 0px 5px;
+  
 }
 .navbar .active {
   color: #3090f0 !important;
@@ -153,26 +160,16 @@ ul {
 .nav-link:hover {
   color: #3090f0 !important;
 }
-.dropdown-menu {
-  width: 1250px !important;
-  right: -600px;
-  padding: 20px;
+.dropdown-menu{
+  padding: 1rem;
+  min-width: 15rem;
+ 
 }
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 @media (max-width: 992px) {
-  .dropdown-menu {
-    width: 300px !important;
-    padding: 0;
-    height: 150px;
-    overflow: auto;
-  }
-  .dropdown-menu li a {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 250px;
-  }
+  
   .navbar .navbar-brand {
     font-size: 18px;
   }
@@ -189,7 +186,7 @@ ul {
 .dropdown-item.active {
   color: #3090f0;
   background-color: transparent;
-  transition: 0.5s ease;
+  transition: 0.5s ease-in-out;
 }
 .dropdown-item:focus,
 .dropdown-item:hover,
@@ -257,6 +254,7 @@ body,
   color: #fff;
   font-weight: 800;
   text-shadow: 4px 5px #000;
+  text-transform: uppercase;
 }
 #slider .stars {
   text-align: center;
@@ -382,6 +380,7 @@ p {
 #business .box {
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 576px) {
@@ -389,6 +388,7 @@ p {
     flex-direction: column;
     width: 100%;
     flex-basis: auto;
+    
   }
 
   #business .text-box,
@@ -406,11 +406,16 @@ p {
   padding-bottom: 50px;
 }
 
-#business .icon-box i {
-  font-size: 80px;
+#business .icon-box img{
+  width: 90px;
+  height: auto;
   color: #fff;
-  padding: 0;
-  margin: 0;
+ 
+}
+
+#business .icon-box i  {
+  font-size: 5rem;
+  color: #fff;
 }
 
 #business .text-box {
@@ -431,6 +436,7 @@ p {
   line-height: 19px;
   font-size: 12px;
   font-weight: bold;
+  text-align: justify;
 }
 
 #business .text-box ul {
@@ -440,10 +446,12 @@ p {
 #business .text-box ul li {
   font-size: 12px;
   line-height: 28px;
+  text-transform: capitalize;
 }
 
 #business .text-box ul li::before {
   content: "\00BB \0020";
+  font-weight: bolder;
 }
 
 /* services */
