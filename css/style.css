@@ -165,9 +165,9 @@ height: auto;
   min-width: 15rem;
  
 }
-.dropdown:hover .dropdown-menu {
+/* .dropdown:hover .dropdown-menu {
   display: block;
-}
+} */
 @media (max-width: 992px) {
   
   .navbar .navbar-brand {
@@ -175,9 +175,9 @@ height: auto;
   }
 }
 
-.dropdown:focus .dropdown-menu {
+/* .dropdown:focus .dropdown-menu {
   display: none;
-}
+} */
 .dropdown-item {
   font-size: 15px;
   padding: 10px;
@@ -960,11 +960,17 @@ footer #link-icons ul li i {
   background-attachment:fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 5rem 0;
   color: #fff;  
  
 }
 
+#front-section.web-development{
+  background-image: url('../img/bg/p4-1-1.png');
+  background-blend-mode:multiply;
+  background-size:50%;
+}
 #front-section.e-commerce{
   background-image: url('../img/bg/background1.jpg');
   background-blend-mode:color;
@@ -1011,6 +1017,17 @@ footer #link-icons ul li i {
   background-image: url('../img/bg/cms-development-company.jpg');
   background-blend-mode:color;
  
+}
+
+#front-section.ios{
+  background-image: url('../img/bg/iOS-app-development.jpg');
+  background-blend-mode:color;
+ 
+}
+#front-section.hybrid{
+  background-image: url('../img/bg/hybrid-development.jpg');
+  background-blend-mode:multiply;
+ background-size: cover;
 }
 
 #front-section > div{
