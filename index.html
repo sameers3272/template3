@@ -37,6 +37,7 @@
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="./js/jquery.easy-ticker.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
+    <link href="./css/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
   </head>
@@ -289,7 +290,7 @@
     </section>
 
     <!-- slider -->
-    <div class="container-fluid1 slider-container" id="slider">
+    <div class="container-fluid1 slider-container" data-aos="fade-down" id="slider">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div
@@ -313,7 +314,7 @@
                   </p>
                 </div>
               </div>
-              <div class="w-100">
+              <div class="w-100" >
                 <div class="display-slider-img">
                   <img src="./img/img02.png" class="img-fluid" alt="" />
                 </div>
@@ -326,8 +327,8 @@
             style="background-image: url('./img/bg/bg2.jpg')"
           >
             <div class="w-100 mt-5 container-fluid reverse" style="height: 93%">
-              <div class="stars">
-                <p class="slider-heading">
+              <div class="stars" >
+                <p class="slider-heading" >
                   Mobile Application Designing & Development
                 </p>
 
@@ -433,7 +434,7 @@
             <div class="icon-box">
               <img src="./img/icon/website-design-symbol.svg" alt="" />
             </div>
-            <div class="text-box animate__animated px-4">
+            <div class="text-box px-4" data-aos="fade-up">
               <h3 class="text-box-title mt-3">Web Design &amp; Development</h3>
               <p>
                 We have 7+ years experiance in market we develope best web
@@ -451,7 +452,7 @@
           </div>
           <div class="box col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-3">
             <div class="icon-box"><img src="./img/icon/analysis.svg" /></div>
-            <div class="text-box animate__animated px-4">
+            <div class="text-box px-4" data-aos="fade-up">
               <h3 class="text-box-title mt-3">Digital Marketing & SEO</h3>
               <p>
                 Our next generation developers converts your website into
@@ -472,7 +473,7 @@
             <div class="icon-box">
               <img src="./img/icon/mobile-app.svg" alt="" />
             </div>
-            <div class="text-box animate__animated px-4">
+            <div class="text-box px-4" data-aos="fade-up">
               <h3 class="text-box-title mt-3">
                 Mobile App Design & Development
               </h3>
@@ -494,7 +495,7 @@
             class="box col-xl-4 mx-auto col-lg-4 col-md-6 col-sm-12 col-12 mt-3"
           >
             <div class="icon-box"><i class="icofont-film"></i></div>
-            <div class="text-box animate__animated px-4">
+            <div class="text-box px-4" data-aos="fade-up">
               <h3 class="text-box-title mt-3">Corporate Fims</h3>
               <p>
                 Corporate Videos showcase the grandeur of your business or
@@ -514,7 +515,7 @@
             class="box col-xl-4 mx-auto col-lg-4 col-md-6 col-sm-12 col-12 mt-3"
           >
             <div class="icon-box"><i class="icofont-search-stock"></i></div>
-            <div class="text-box animate__animated px-4">
+            <div class="text-box  px-4" data-aos="fade-up">
               <h3 class="text-box-title mt-3">Marketing Research</h3>
               <p>
                 Market research allows a company to discover the target market
@@ -534,7 +535,7 @@
       </div>
     </section>
 
-    <section class="services p-5" id="services">
+    <section class="services p-5" id="services" data-aos="fade-left">
       <h3 class="text-center" style="font-weight: 100">We Serve</h3>
       <h1 class="text-center m-4" style="font-weight: bolder">
         Web Design Services
@@ -706,9 +707,9 @@
 
     <!-- why us -->
 
-    <section class="wdp-section wdp-section-blue wdp-why-choose-us-section">
+    <section class="wdp-section wdp-section-blue wdp-why-choose-us-section" data-aos="fade-right">
       <div class="container-fluid">
-        <div class="wdp-heading wdp-heading-white text-center">
+        <div class="wdp-heading wdp-heading-white text-center" data-aos="fade-up" data-duration="800">
           <h4 class="pre-title">We Serve</h4>
 
           <h3 class="main-title">Why Choose Us</h3>
@@ -832,7 +833,9 @@
                 row
                 mx-auto
                 my-auto
+               
               "
+              
             >
               <div class="col-12 px-0 wdp-why-choose-img">
                 <img src="./img/gif/youbase-landing-page-large.gif" />
@@ -1004,15 +1007,15 @@
 
     <!-- Project area -->
 
-    <section class="project-area">
+    <section class="project-area" data-aos="fade-up">
       <div class="container">
         <div class="project-title pb-3">
-          <h3 class="text-center" style="font-weight: 100">Portfolio</h3>
-          <h1 class="text-center m-4" style="font-weight: bolder">
+          <h3 class="text-center" style="font-weight: 100" >Portfolio</h3>
+          <h1 class="text-center m-4" style="font-weight: bolder" >
             Our Portfolio
           </h1>
         </div>
-        <div class="button-group">
+        <div class="button-group" >
           <button type="button" class="active btn btn-primary" data-filter="*">
             All
           </button>
@@ -1035,7 +1038,7 @@
         </div>
 
         <div class="row grid">
-          <div class="col-lg-3 col-md-4 col-sm-12 element-item latest">
+          <div class="col-lg-3 col-md-4 col-sm-12 element-item latest" >
             <div class="our-project">
               <div class="img">
                 <a
@@ -1293,17 +1296,17 @@
     <!-- End Project area -->
 
     <!-- clients section-->
-    <section class="container-fluid py-5" id="clients">
-      <h3 class="text-center" style="font-weight: 100">Clients List</h3>
-      <h1 class="text-center m-4" style="font-weight: bolder">
+    <section class="container-fluid py-5" id="clients" >
+      <h3 data-aos="fade-right" class="text-center" style="font-weight: 100">Clients List</h3>
+      <h1 data-aos="fade-left" class="text-center m-4" style="font-weight: bolder">
         We Love Our Clients
       </h1>
-      <p class="text-center mb-5">
+      <p data-aos="fade-right" class="text-center mb-5">
         Needless to say that we here feel very strongly about working in
         partnership with other developers, ideas and technologies
       </p>
 
-      <div class="owl-carousel client owl-theme" id="clients-owl-carousel">
+      <div data-aos="fade-left" class="owl-carousel client owl-theme" id="clients-owl-carousel">
         <div><img src="./img/clients/client-1.png" alt="" /></div>
         <div><img src="./img/clients/client-2.png" alt="" /></div>
         <div><img src="./img/clients/client-3.png" alt="" /></div>
@@ -1317,9 +1320,9 @@
 
     <!--end client section-->
     <!-- subscribe here -->
-    <section class="container-fluid1" id="subscribe">
+    <section  class="container-fluid1" id="subscribe">
       <div class="row">
-        <div class="col-lg-6 text">Subscribe Here...!</div>
+        <div class="col-lg-6 text" >Subscribe Here...!</div>
         <div class="col-lg-6 center">
           <div class="input-group">
             <input
@@ -1341,11 +1344,11 @@
       <div class="container-fluid">
         <div class="row">
           <div class="row col-lg-6 col-md-12 col-12" id="our-service">
-            <div class="col-12 footer-box">
+            <div class="col-12 footer-box" data-aos="fade-left" >
               <h4>Our Services</h4>
               <div class="border-bottom-footer"></div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-left">
               <ul>
                 <li>
                   <a href="./website-development.html">website development</a>
@@ -1357,7 +1360,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-left">
               <ul>
                 <li>
                   <a href="./dynamic-website-design.html">dynamic website</a>
@@ -1375,7 +1378,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up">
               <ul>
                 <li><a href="./graphic-design.html">graphic website</a></li>
                 <li>
@@ -1390,7 +1393,7 @@
           </div>
 
           <div class="row col-lg-6 col-md-12 col-12">
-            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-up">
               <div class="footer-box">
                 <h4>about company</h4>
                 <div class="border-bottom-footer"></div>
@@ -1403,7 +1406,7 @@
                 service and quality.
               </p>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 row">
+            <div class="col-lg-6 col-md-6 col-sm-6 row" data-aos="fade-right">
               <div class="footer-box">
                 <h4>technology Partner</h4>
                 <div class="border-bottom-footer"></div>
@@ -1450,7 +1453,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6" id="links">
+          <div class="col-lg-6" id="links" data-aos="fade-left">
             <div class="footer-box">
               <h4>Quick links</h4>
               <div class="border-bottom-footer"></div>
@@ -1463,7 +1466,7 @@
               <li><a href="./contact-us.html">contact</a></li>
             </ul>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-right">
             <div class="footer-box">
               <h4>connect</h4>
               <div class="border-bottom-footer"></div>
@@ -1482,7 +1485,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div id="preloader"></div> -->
+    <div id="preloader"></div>
 
     <!--End subscribe here -->
 
@@ -1492,6 +1495,11 @@
 
     <script src="./js/isotope.min.js"></script>
     <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/aos.js"></script>
+    
+
+
+    
     <script src="./js/script.js"></script>
   </body>
 </html>
